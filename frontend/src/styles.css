@@ -1,0 +1,53 @@
+body {
+    font-family: "Nanum Gothic", sans-serif;
+    background-color: #f8f9fa;
+  }
+  
+  .card {
+    cursor: pointer;
+  }
+  
+  .modal-content img {
+    width: 100%;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    background-color: transparent;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .navbar button {
+    background-color: white;
+    border: 1px black;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .navbar button:hover {
+    background-color: #ff9900;
+    color: white;
+    border-color: black;
+  }
+
+  .menu-title {
+    font-family: "Arial Black", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    margin: 30px 0 15px;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  
