@@ -5,8 +5,19 @@ body {
   
   .card {
     cursor: pointer;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
   }
-  
+
+  .card-img-top {
+    border-bottom: 1px solid #eee;
+  }
+
+  .card-body {
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
   .modal-content img {
     width: 100%;
   }
@@ -50,4 +61,41 @@ body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   }
 
+  .btn-outline-primary:hover {
+    background-color: #e63811 !important; 
+    border-color: #e63811 !important; 
+    color: white !important; 
+  }
+
+  .btn-outline-secondary:hover {
+    background-color: #0A3875 !important; 
+    border-color: #0A3875 !important; 
+    color: white !important; 
+  }
+
+  .back-icon {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-left: 0px;
+    margin-bottom: 20px;
+  }
   
+
+  /* 반응형 카드 정렬 */
+  @media (max-width: 768px) {
+    .card-title {
+      font-size: 0.9rem;
+    }
+
+    .card-text {
+      font-size: 0.75rem;
+    }
+
+    .menu-title {
+      font-size: 1rem;
+    }
+  }
+
+

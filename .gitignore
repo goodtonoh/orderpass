@@ -1,0 +1,9 @@
+orderpass-menu.zip
+
+# 환경 변수 제외 
+
+.env
+
+backend/.env
+frontend/.env
+
