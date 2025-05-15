@@ -8,7 +8,7 @@ function LoginPage() {
   const navigate = useNavigate();
 
   const API_URL = process.env.NODE_ENV === "production"
-  ? process.env.REACT_APP_API_URL_PROD || "https://your-backend.onrender.com"
+  ? process.env.REACT_APP_API_URL_PROD || "https://orderpass.onrender.com"
   : process.env.REACT_APP_API_URL_LOCAL || "http://localhost:5000";
   
   const handleSubmit = async (e) => {

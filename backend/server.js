@@ -18,7 +18,7 @@ console.log(`🔹 API_URL: ${API_URL}`);
 
 const allowedOrigins =
   process.env.NODE_ENV === "production"
-    ? ["https://your-frontend.vercel.app"]
+    ? ["https://orderpass.onrender.com"]
     : ["http://localhost:3000"];
 
 app.use(cors({
