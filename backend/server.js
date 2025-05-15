@@ -18,7 +18,7 @@ console.log(`🔹 API_URL: ${API_URL}`);
 
 const allowedOrigins =
   process.env.NODE_ENV === "production"
-    ? ["https://orderpass.onrender.com"]
+    ? ["https://orderpass.vercel.app"]
     : ["http://localhost:3000"];
 
 app.use(cors({
@@ -26,6 +26,7 @@ app.use(cors({
     if (!origin || allowedOrigins.includes(origin)) {
       callback(null, true);
     } else {
+      console.error(`❌ CORS 차단: ${origin}`);
       callback(new Error("CORS 정책에 의해 차단되었습니다."), false);
     }
   },
